@@ -1,0 +1,28 @@
+import java.util.*;
+/**
+ * @author Javier Octavio
+ */
+public class EVA2_PRACTICA_1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("El Primer Numero");
+        int iNum;
+        
+        iNum = input.nextInt();
+        System.out.println("El Segundo Numero");
+        int iNum2;
+        
+        iNum2 = input.nextInt();
+        if (iNum == iNum2) {
+            System.out.println("El Numero 1 y el Numero 2 son Iguales");
+        } else {
+            System.out.println("No Son Iguales");
+        }
+    }
+}
