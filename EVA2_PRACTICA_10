@@ -1,0 +1,34 @@
+import java.util.*;
+/**
+ * @author Javier Octavio
+ */
+public class Principal {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        System.out.println("Tus Puntos en Matematicas");
+        int iMate;
+        
+        iMate = input.nextInt();
+        System.out.println("Tus Puntos en Fisica");
+        int iFisic;
+        
+        iFisic = input.nextInt();
+        System.out.println("Tus Puntos en Quimica");
+        int iQuim;
+        
+        iQuim = input.nextInt();
+        int iTotal;
+        
+        iTotal = iMate + iFisic + iQuim;
+        if (iMate >= 65 && iFisic >= 55 && iQuim >= 50 && iTotal >= 180) {
+            System.out.println("El Candidato es Elegible para el Curso");
+        } else {
+            System.out.println("El Candidato NO es Elegible para el Curso");
+        }
+    }
+}
