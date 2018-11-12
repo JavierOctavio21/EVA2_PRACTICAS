@@ -1,0 +1,42 @@
+import java.util.*;
+/**
+ * @author Javier Octavio
+ */
+public class Principal {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        System.out.println("El Primer Lado del Triangulo");
+        int iLado;
+        
+        iLado = input.nextInt();
+        System.out.println("El Segundo Lado del Triangulo");
+        int iLado2;
+        
+        iLado2 = input.nextInt();
+        System.out.println("El Tercer Lado del Triangulo");
+        int iLado3;
+        
+        iLado3 = input.nextInt();
+        if (iLado == iLado2) {
+            if (iLado == iLado3) {
+                System.out.println("Es Triangulo Equilatero");
+            } else {
+                System.out.println("Es Triangulo Isosceles");
+            }
+        } else {
+            if (iLado == iLado3) {
+                System.out.println("Es Triangulo Isosceles");
+            } else {
+                if (iLado2 == iLado3) {
+                    System.out.println("Es Triangulo Isosceles");
+                } else {
+                    System.out.println("Es Triangulo Escaleno");
+                }
+            }
+        }
+    }
+}
