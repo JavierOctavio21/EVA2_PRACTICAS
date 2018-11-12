@@ -1,0 +1,39 @@
+import java.util.*;
+/**
+ * @author Javier Octavio
+ */
+public class Principal {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        System.out.println("El Primer Valor");
+        int iValor;
+        
+        iValor = input.nextInt();
+        System.out.println("El Segundo Valor");
+        int iValor2;
+        
+        iValor2 = input.nextInt();
+        System.out.println("El Tercer Valor");
+        int iValor3;
+        
+        iValor3 = input.nextInt();
+        if (iValor > iValor2) {
+            if (iValor > iValor3) {
+                System.out.println(iValor);
+            } else {
+                System.out.println(iValor3);
+            }
+        } else {
+            if (iValor2 > iValor3) {
+                System.out.println(iValor2);
+            } else {
+                System.out.println(iValor3);
+            }
+        }
+    }
+}
