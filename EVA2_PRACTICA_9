@@ -1,0 +1,34 @@
+import java.util.*;
+/**
+ * @author Javier Octavio
+ */
+public class Principal {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        System.out.println("El Valor A del Trinomio");
+        int iA;
+        iA = input.nextInt();
+        System.out.println("El Valor B del Trinomio");
+        int iB;
+        iB = input.nextInt();
+        System.out.println("El Valor C del Trinomio");
+        int iC;
+        iC = input.nextInt();
+        
+        int iDisc;
+        iDisc = (int) (Math.pow(iB, 2) - 4 * iA * iC);
+        if (iDisc < 0) {
+            System.out.println("La EcuaciÃ³n no se puede Resolver");
+        } else {
+            double rEcuacion;
+            rEcuacion = (-iB + Math.sqrt(Math.pow(iB, 2) - 4 * iA * iC)) / (2 * iA);
+            double rEcuacion2;
+            rEcuacion2 = (-iB - Math.sqrt(Math.pow(iB, 2) - 4 * iA * iC)) / (2 * iA);
+            System.out.println("Es un trinomio cuadrado perfecto, y las raices son "+rEcuacion+" y "+rEcuacion2);
+        }
+    }
+}
